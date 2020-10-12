@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traverse DOM Nodes</title>
+  </head>
+  <body>
+    <ul id="mylist">
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+    <script>
+      const ultag = document.querySelector("ul");
+      const firstTask = ultag.firstElementChild;
+      console.log("Element child", ultag.children);
+      console.log("First element child", ultag.firstElementChild);
+      console.log("last element child", ultag.lastElementChild);
+      console.log("second element", firstTask.nextElementSibling);
+      console.log(firstTask.previousElementSibling); //null bcz there is no element before first element.
+    </script>
+  </body>
+</html>

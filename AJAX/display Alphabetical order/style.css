@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: slategray;
+}
+#title {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.5rem;
+}
+#list {
+  padding-left: 30rem;
+  margin-top: 10px;
+  color: chartreuse;
+}
+li {
+  line-height: 2rem;
+  color: black;
+  font-size: 1.5rem;
+  list-style-type: square;
+}

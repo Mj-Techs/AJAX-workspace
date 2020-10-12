@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to DOM</title>
+    <style>
+      body {
+        background: hotpink;
+      }
+      h1 {
+        text-decoration: underline;
+        text-align: center;
+        font-size: 2.5rem;
+        color: khaki;
+      }
+      p {
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 1rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Introduction to DOM</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit rerum
+      fuga, velit quo magnam quasi eum ad similique tempora voluptate eligendi
+      sequi optio harum nam magni praesentium non, aliquid quibusdam!
+    </p>
+    <script>
+      const h1Handle = document.querySelector("h1");
+      const pHandle = document.querySelector("p");
+
+      // change the heading to "Understanding the DOM"
+      h1Handle.textContent = "Understanding the DOM";
+
+      // change the color of heading to orange
+      h1Handle.style.color = "orange";
+
+      // increase the fontSize of the paragraph text to 20
+      pHandle.fontSize = "20px";
+
+      // change the background color of the page to white
+      document.querySelector("body").style.background = "white";
+    </script>
+  </body>
+</html>

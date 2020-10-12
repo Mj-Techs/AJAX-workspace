@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo app</title>
+  </head>
+  <body>
+    <h1>Todo list</h1>
+    <form onsubmit="submitHandle(event)">
+      <input type="text" name="title" placeholder="Enter your task" />
+    </form>
+    <h2>My Task-0</h2>
+    <ul></ul>
+
+    <script>
+      const ulHandle = document.querySelector("ul");
+      const h2Handle = document.querySelector("h2");
+
+      const tasks = JSON.parse(localStorage.getItem("task")) || [];
+      function submitHandle(e) {
+        e.preventDefault();
+
+        const task = {
+          id: Number(new Date()),
+          title: e.target.title.value,
+        };
+        tasks.push(task);
+        localStorage.setItem("task", JSON.stringify(tasks));
+        e.target.reset();
+
+        liGenerator(task);
+      }
+      //list generator
+      const liGenerator = (task) => {
+        const liTag = document.createElement("li");
+        liTag.textContent = task.title;
+        ulHandle.appendChild(liTag);
+        h2Handle.textContent = `My Tasks-${tasks.length}`;
+        removeListitem(task, liTag);
+      };
+      const removeListitem = (task, liTag) => {
+        liTag.addEventListener("click", () => {
+          ulHandle.removeChild(liTag);
+          const index = tasks.findIndex((arrTask) => {
+            return arrTask.id == task.id;
+          });
+          tasks.splice(index, 1);
+          localStorage.setItem("task", JSON.stringify(tasks));
+          h2Handle.textContent = `My Tasks-${tasks.length}`;
+        });
+      };
+
+      tasks.forEach((task) => liGenerator(task));
+    </script>
+  </body>
+</html>

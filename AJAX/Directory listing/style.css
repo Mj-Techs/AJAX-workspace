@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgb(207, 161, 75);
+}
+#block {
+  width: 100vw;
+  height: 4rem;
+  padding-top: 1rem;
+  font-size: 2rem;
+  letter-spacing: 15px;
+  background: chocolate;
+  text-align: center;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+#title {
+  height: 4rem;
+  padding-top: 1rem;
+  font-size: 2.5rem;
+  background: chocolate;
+  color: blue;
+  text-align: center;
+}
+#list {
+  height: 50%;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+  padding-left: 30rem;
+  list-style-type: decimal-leading-zero;
+}

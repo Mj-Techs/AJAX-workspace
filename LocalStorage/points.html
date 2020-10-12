@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage</title>
+  </head>
+  <body>
+    <h1>Working with localStorage</h1>
+
+    <script>
+      localStorage.setItem("name", "mrityunjay");
+      localStorage.setItem("city", "bangalore");
+
+      localStorage.setItem(
+        "contact",
+        JSON.stringify({ mobile: "1234567890", email: "mj@gmail.com" })
+      );
+      localStorage.setItem(
+        "skills",
+        JSON.stringify(["React", "javaScript", "Angular", "NodeJs"])
+      );
+      console.log(localStorage);
+
+      //   console.log(localStorage.getItem("contact"));
+      const parseContact = JSON.parse(localStorage.getItem("contact"));
+      console.log(parseContact.mobile);
+
+      const parsedSkills = JSON.parse(localStorage.getItem("skills"));
+      console.log(parsedSkills);
+    </script>
+  </body>
+</html>

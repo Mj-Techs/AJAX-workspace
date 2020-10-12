@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: yellowgreen;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#title {
+  width: 100vw;
+  text-align: center;
+  font-size: 3.5rem;
+  color: blue;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-style: dashed;
+  letter-spacing: 0.5rem;
+}
+ul li {
+  margin-left: 20rem;
+  list-style-type: decimal-leading-zero;
+  letter-spacing: 2px;
+  word-spacing: 7 px;
+  line-height: 2rem;
+  font-size: 1.3rem;
+}

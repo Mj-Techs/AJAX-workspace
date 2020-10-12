@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greetings</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: sans-serif;
+        color: crimson;
+        text-decoration: underline;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <script>
+      const today = new Date();
+      const hours = today.getHours();
+      const name = prompt("Hi! Please enter your name");
+      let result = "";
+      if (hours >= 0 && hours <= 11) {
+        result = "Good Morning";
+      } else if (hours >= 12 && hours <= 17) {
+        result = "Good Afternoon";
+      } else if (hours >= 18) {
+        result = "Good Evening";
+      }
+      document.querySelector("h1").textContent = `${result} ${name}`;
+    </script>
+  </body>
+</html>

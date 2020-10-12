@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStorage</title>
+  </head>
+  <body>
+    <h1>Working with localStorage</h1>
+
+    <script>
+      //add a new key value pair
+      localStorage.setItem("name", "Mrityunjay kumar");
+      localStorage.setItem("city", "Bangalore");
+      console.log(localStorage);
+
+      //localstorage length
+      console.log(localStorage.length);
+
+      // get a value from localStorage
+      console.log(localStorage.getItem("name"));
+      console.log(localStorage.getItem("address"));
+
+      //remove item from localStorage
+      //   localStorage.removeItem("name");
+      //   console.log(localStorage);
+
+      //clear() remove all the item from localStorage
+      localStorage.clear();
+      console.log(localStorage);
+    </script>
+  </body>
+</html>

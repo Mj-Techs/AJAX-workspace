@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: deeppink;
+      }
+      #app {
+        width: 50vw;
+        /* height: 50vh; */
+        background: chocolate;
+        text-align: center;
+        margin-left: 21rem;
+        margin-top: 8rem;
+        border: 5px dashed yellow;
+      }
+      h1 {
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 3.5rem;
+        color: navy;
+        background: white;
+        border: 5px dotted yellow;
+      }
+      li {
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      const teams = [
+        "Chennai Super Kings",
+        "Delhi Capitals",
+        "Kings XI Punjab",
+        "Kolkata Night Riders",
+        "Mumbai Indians",
+        "Rajsthan Royals",
+        "Royal Challenger Bangalore",
+        "Sunrisers Hyderabad",
+      ];
+      const appHandle = document.getElementById("app");
+      const h1Handle = document.createElement("h1");
+      const ulHandle = document.createElement("ul");
+      h1Handle.textContent = `List IPL teams-${teams.length}`;
+      appHandle.appendChild(h1Handle);
+
+      teams.sort().forEach((ele) => {
+        const liHandle = document.createElement("li");
+        liHandle.textContent = ele;
+        ulHandle.appendChild(liHandle);
+      });
+      appHandle.appendChild(ulHandle);
+    </script>
+  </body>
+</html>

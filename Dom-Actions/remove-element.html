@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove element</title>
+  </head>
+  <body>
+    <button>Press me to remove this Button</button>
+    <script>
+      const btn = document.querySelector("button");
+      const body = document.querySelector("body");
+      const h1Handle = document.createElement("h1");
+      body.appendChild(h1Handle);
+      btn.addEventListener("click", function () {
+        //syntax:->parentElementNode.removeChild(elementNode)
+        body.style.background = "crimson";
+        h1Handle.textContent = "Hi Mrityunjay! The button has gone now.";
+        h1Handle.style.color = "black";
+        h1Handle.style.textAlign = "center";
+        h1Handle.style.fontFamily = "sans-serif";
+        body.removeChild(btn);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic Colors</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button style="background: white">Change the background color</button>
+
+    <script>
+      const colors = ["red", "blue", "green", "yellow", "orange"];
+      const btn = document.querySelector("button");
+      const body = document.querySelector("body");
+      btn.addEventListener("click", function () {
+        const colr = colors[Math.floor(Math.random() * colors.length)];
+        body.style.background = colr;
+      });
+    </script>
+  </body>
+</html>

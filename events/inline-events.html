@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline events Handlers</title>
+  </head>
+  <body>
+    <h1></h1>
+    <button onclick="sayHello()">Click me</button>
+    <script>
+      const sayHello = () => {
+        const name = prompt("Hi There! Please enter your name");
+        const h1Handle = document.querySelector("h1");
+        const body = document.querySelector("body");
+        const btn = document.querySelector("button");
+
+        h1Handle.textContent = `Hello ${name} how are you doing?`;
+
+        h1Handle.style.textAlign = "center";
+        h1Handle.style.fontFamily = "sans-serif";
+        h1Handle.style.color = "crimson";
+        body.removeChild(btn);
+      };
+    </script>
+  </body>
+</html>

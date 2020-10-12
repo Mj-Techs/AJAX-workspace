@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modifying attribute</title>
+  </head>
+  <body>
+    <h1>Social Media Links</h1>
+    <a href="http://facebook.com">facebook</a>
+    <a href="http://instagram.com">instagram</a>
+    <a href="http://linkedin.com">linkedin</a>
+    <script>
+      const elements = document.querySelectorAll("a");
+      for (const ele of elements) {
+        ele.setAttribute("target", "_blank");
+      }
+    </script>
+  </body>
+</html>

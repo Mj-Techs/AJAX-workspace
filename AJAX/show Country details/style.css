@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: coral;
+}
+#title {
+  text-align: center;
+  font-size: 2.5rem;
+  border: 5px solid crimson;
+  color: blue;
+}
+#list {
+  margin-top: 10px;
+  padding-left: 30rem;
+  list-style-type: decimal;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  line-height: 2rem;
+}
+button {
+  font-size: 1.5rem;
+  color: blue;
+  border: 5px solid;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

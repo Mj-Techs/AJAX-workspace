@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: yellowgreen;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#title {
+  width: 100vw;
+  text-align: center;
+  font-size: 3.5rem;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-style: dashed;
+  letter-spacing: 0.5rem;
+}
+#table {
+  text-align: center;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+#box {
+  border: 5px solid;
+  color: black;
+}
+#row {
+  font-size: 2rem;
+}
+button {
+  /* text-align: center; */
+  font-size: 5rem;
+  margin-left: 30rem;
+  margin-top: 10rem;
+  border: 5px solid;
+  border-radius: 10rem;
+  background: cornflowerblue;
+  cursor: pointer;
+}

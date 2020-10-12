@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Elements By Tag Name</title>
+  </head>
+  <body>
+    <h1>Completed Tasks!</h1>
+    <ul>
+      <li>understand requirements</li>
+      <li>development application</li>
+      <li>deploy application</li>
+    </ul>
+
+    <script>
+      const liHandle = document.getElementsByTagName("li");
+      for (const ele of liHandle) {
+        ele.style.textDecoration = "line-through";
+      }
+    </script>
+  </body>
+</html>

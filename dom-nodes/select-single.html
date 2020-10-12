@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Single Element</title>
+  </head>
+
+  <body>
+    <h1>Client-DCT Inc</h1>
+    <p>Build an email system</p>
+    <h1>Completed Tasks</h1>
+    <ul>
+      <li>understand requirements</li>
+      <li>development application</li>
+      <li>deploy application</li>
+    </ul>
+
+    <script>
+      const h1Handle = document.querySelectorAll("h1");
+      const pHandle = document.querySelector("p");
+      const liHandle = document.querySelectorAll("li");
+      for (const ele of h1Handle) {
+        ele.style.fontSize = "40px";
+        ele.style.textAlign = "center";
+        ele.style.color = "crimson";
+      }
+      pHandle.style.fontSize = "20px";
+      pHandle.style.textAlign = "center";
+      for (const ele of liHandle) {
+        ele.style.textDecoration = "line-through";
+        ele.style.textAlign = "center";
+      }
+    </script>
+  </body>
+</html>
